@@ -12,3 +12,6 @@ def init_db():
     name TEXT, phone TEXT, service TEXT, date TEXT, time TEXT, status TEXT)""")
     conn.commit()
     conn.close()
+
+with open("token.txt", "r") as f:
+    TOKEN = f.read()
